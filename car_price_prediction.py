@@ -3,7 +3,6 @@ import re
 df = pd.read_csv('car_web_scraped_dataset.csv')
 print(df.columns)
 df.info()
-
 df["miles"]=(
     df["miles"].str.replace("miles", "").str.replace(",", "").astype(float))
 df["price"]=(
